@@ -14,7 +14,6 @@ namespace hello {
 
     class Greeter {
     public:
-        Greeter() {}
         Greeter(char const *name, char const *msg) : _name(name), _msg(msg) {}
 
         std::string _name;
@@ -23,6 +22,14 @@ namespace hello {
         std::string get_name() const { return _name; }
 
         std::string get_msg() const { return _msg; }
+
+        void set_msg(char const *msg) { _msg = msg; }
+
+        void set_name(char const *name) { _name = name; }
+
+        void greet() {
+            std::cout << "Hello " << _name << " " << _msg << std::endl;
+        }
 
     };
 

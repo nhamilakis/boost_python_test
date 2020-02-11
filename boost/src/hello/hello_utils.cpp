@@ -2,8 +2,7 @@
 
 void hello::mainfn(void)
 {
-    std::cout << "This is the hello module\n It doesn't do much. Just says hello!!"
-              << std::endl;
+    std::cout << "Hello Human, this is the greet module! It greets you." << std::endl;
 }
 
 char const* hello::greet(char const *who)
